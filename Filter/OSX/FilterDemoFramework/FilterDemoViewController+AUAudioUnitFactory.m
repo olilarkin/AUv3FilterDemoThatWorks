@@ -7,6 +7,7 @@
 */
 
 #import "FilterDemoViewController+AUAudioUnitFactory.h"
+#import <FilterDemo.h>
 
 @implementation FilterDemoViewController (AUAudioUnitFactory)
 

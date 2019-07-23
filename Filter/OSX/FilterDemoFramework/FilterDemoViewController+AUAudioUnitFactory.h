@@ -7,7 +7,8 @@
 */
 
 #import <CoreAudioKit/AUViewController.h>
-#import <FilterDemoFramework/FilterDemoFramework.h>
+//#import <FilterDemoFramework/FilterDemoFramework.h>
+#import <FilterDemoViewController.h>
 
 @interface FilterDemoViewController (AUAudioUnitFactory) <AUAudioUnitFactory>
 

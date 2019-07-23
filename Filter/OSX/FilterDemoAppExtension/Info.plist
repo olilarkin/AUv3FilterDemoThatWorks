@@ -31,7 +31,7 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>AudioComponentBundle</key>
-			<string>com.example.apple-samplecode.FilterDemoFrameworkOSX</string>
+			<string>com.example.apple-samplecode.FilterDemoFramework</string>
 			<key>AudioComponents</key>
 			<array>
 				<dict>

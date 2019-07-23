@@ -40,6 +40,12 @@
     self.preferredContentSize = NSMakeSize(800, 500);
 }
 
+- (id)init {
+  self = [super initWithNibName:@"FilterDemoViewController"
+                         bundle:[NSBundle bundleForClass:NSClassFromString(@"FilterDemoViewController")]];
+  return self;
+}
+
 - (void)dealloc {
     filterView.delegate = nil;
     [self disconnectViewWithAU];
