@@ -335,6 +335,7 @@
 				92FF86601B9A525C007C9389 /* Sources */,
 				92FF86611B9A525C007C9389 /* Frameworks */,
 				92FF86621B9A525C007C9389 /* Resources */,
+				4F78BE3D22E7D40F00AD537E /* Run Script - Force register AUv3 appex for easier debugging */,
 			);
 			buildRules = (
 			);
@@ -441,6 +442,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F78BE3D22E7D40F00AD537E /* Run Script - Force register AUv3 appex for easier debugging */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - Force register AUv3 appex for easier debugging";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "pluginkit -a $BUILD_DIR/$CONFIGURATION/FilterDemo.app/Contents/PlugIns/FilterDemoAppExtension.appex\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92FF86471B9A4D97007C9389 /* Sources */ = {
