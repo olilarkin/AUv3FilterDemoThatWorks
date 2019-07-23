@@ -13,7 +13,6 @@
 		2B4A91811C7541A700F61BDD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4A917B1C75403100F61BDD /* AVFoundation.framework */; };
 		306CFCD41C5833460028386F /* DSPKernel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 92A10CA71B951C660081EA80 /* DSPKernel.hpp */; };
 		306CFCD61C5833510028386F /* BufferedAudioBus.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 92A10CA61B951C660081EA80 /* BufferedAudioBus.hpp */; };
-		4F4D205122E72F8E00B7C588 /* FilterDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92FF86A11B9F5B7B007C9389 /* FilterDemoViewController.xib */; };
 		4F4D205222E7300500B7C588 /* FilterDemoViewController+AUAudioUnitFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FF86961B9F52DB007C9389 /* FilterDemoViewController+AUAudioUnitFactory.m */; };
 		4F4D205422E7309300B7C588 /* FilterDemoAppExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D205322E7309300B7C588 /* FilterDemoAppExtension.m */; };
 		4FBCB21822E71D1D0086A5FD /* SimplePlayEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91236D871B08F66200734C5E /* SimplePlayEngine.swift */; };
@@ -430,7 +429,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F4D205122E72F8E00B7C588 /* FilterDemoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

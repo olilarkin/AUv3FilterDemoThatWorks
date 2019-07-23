@@ -98,10 +98,11 @@
 - (void)embedPlugInView {
     NSURL *builtInPlugInURL = [[NSBundle mainBundle] builtInPlugInsURL];
     NSURL *pluginURL = [builtInPlugInURL URLByAppendingPathComponent: @"FilterDemoAppExtension.appex"];
-    NSBundle *appExtensionBundle = [NSBundle bundleWithURL: pluginURL];
-    
+//    NSBundle *appExtensionBundle = [NSBundle bundleWithURL: pluginURL];
+    NSBundle *frameworkBundle = [NSBundle bundleWithIdentifier:@"com.example.apple-samplecode.FilterDemoFramework"];
+
     auV3ViewController = [[FilterDemoViewController alloc] initWithNibName: @"FilterDemoViewController"
-                                                                    bundle: appExtensionBundle];
+                                                                    bundle: frameworkBundle];
     
     NSView *view = auV3ViewController.view;
     view.frame = _containerView.bounds;
