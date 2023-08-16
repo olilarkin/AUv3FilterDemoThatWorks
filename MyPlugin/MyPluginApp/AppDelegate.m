@@ -1,7 +1,7 @@
 
 #import "AppDelegate.h"
 
-#import "MyPluginViewController+AUAudioUnitFactory.h"
+#import "MyPluginViewController.h"
 #import <AudioUnit/AudioUnit.h>
 #import <AudioToolbox/AudioToolbox.h>
 

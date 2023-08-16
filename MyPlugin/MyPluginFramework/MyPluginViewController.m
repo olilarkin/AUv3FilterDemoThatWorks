@@ -2,7 +2,8 @@
 #import <MyPluginFramework/MyPlugin.h>
 #import "MyPluginViewController.h"
 
-@interface MyPluginViewController () {
+@interface MyPluginViewController (AUAudioUnitFactory)
+{
 }
 
 @end
@@ -51,6 +52,12 @@
 //    dispatch_async(dispatch_get_main_queue(), ^{
 //
 //    });
+}
+
+- (MyPlugin *) createAudioUnitWithComponentDescription:(AudioComponentDescription) desc error:(NSError **)error {
+    self.audioUnit = [[MyPlugin alloc] initWithComponentDescription:desc error:error];
+    
+    return self.audioUnit;
 }
 
 @end

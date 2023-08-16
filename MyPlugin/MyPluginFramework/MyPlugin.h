@@ -4,7 +4,6 @@
 #import <AudioToolbox/AudioToolbox.h>
 
 @interface MyPlugin : AUAudioUnit
-
 @end
 
 #endif /* MyPlugin_h */

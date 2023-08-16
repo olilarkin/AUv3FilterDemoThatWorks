@@ -5,7 +5,7 @@
 
 @class MyPlugin;
 
-@interface MyPluginViewController : AUViewController
+@interface MyPluginViewController : AUViewController <AUAudioUnitFactory>
 
 @property (nonatomic)MyPlugin *audioUnit;
 
