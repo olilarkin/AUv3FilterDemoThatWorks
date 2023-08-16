@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		164896A51C925D1600AB781D /* MyPluginViewController_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 164896A41C925D1600AB781D /* MyPluginViewController_Internal.h */; };
 		2B4A91811C7541A700F61BDD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4A917B1C75403100F61BDD /* AVFoundation.framework */; };
 		4F4D205222E7300500B7C588 /* MyPluginViewController+AUAudioUnitFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FF86961B9F52DB007C9389 /* MyPluginViewController+AUAudioUnitFactory.m */; };
 		4F4D205422E7309300B7C588 /* MyPluginAppExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D205322E7309300B7C588 /* MyPluginAppExtension.m */; };
@@ -27,8 +26,6 @@
 		92FF86A21B9F5B7B007C9389 /* MyPluginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 92FF869F1B9F5B7B007C9389 /* MyPluginViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92FF86A31B9F5B7B007C9389 /* MyPluginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FF86A01B9F5B7B007C9389 /* MyPluginViewController.m */; };
 		92FF86A41B9F5B7B007C9389 /* MyPluginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92FF86A11B9F5B7B007C9389 /* MyPluginViewController.xib */; };
-		92FF86A71B9F5D42007C9389 /* FilterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 92FF86A51B9F5D42007C9389 /* FilterView.h */; };
-		92FF86A81B9F5D42007C9389 /* FilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FF86A61B9F5D42007C9389 /* FilterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +79,6 @@
 
 /* Begin PBXFileReference section */
 		164896A31C9259D400AB781D /* MyPluginViewController+AUAudioUnitFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyPluginViewController+AUAudioUnitFactory.h"; sourceTree = "<group>"; };
-		164896A41C925D1600AB781D /* MyPluginViewController_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPluginViewController_Internal.h; sourceTree = "<group>"; };
 		2B4A917B1C75403100F61BDD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		2B4A917D1C75403E00F61BDD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
 		4F4D205322E7309300B7C588 /* MyPluginAppExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPluginAppExtension.m; sourceTree = "<group>"; };
@@ -107,8 +103,6 @@
 		92FF869F1B9F5B7B007C9389 /* MyPluginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPluginViewController.h; sourceTree = "<group>"; };
 		92FF86A01B9F5B7B007C9389 /* MyPluginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPluginViewController.m; sourceTree = "<group>"; };
 		92FF86A11B9F5B7B007C9389 /* MyPluginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPluginViewController.xib; sourceTree = "<group>"; };
-		92FF86A51B9F5D42007C9389 /* FilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterView.h; sourceTree = "<group>"; };
-		92FF86A61B9F5D42007C9389 /* FilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,10 +195,7 @@
 				4F78BE6F22E7DE8000AD537E /* MyPlugin.mm */,
 				92FF86821B9F4EDA007C9389 /* MyPluginFramework.h */,
 				92FF869F1B9F5B7B007C9389 /* MyPluginViewController.h */,
-				164896A41C925D1600AB781D /* MyPluginViewController_Internal.h */,
 				92FF86A01B9F5B7B007C9389 /* MyPluginViewController.m */,
-				92FF86A51B9F5D42007C9389 /* FilterView.h */,
-				92FF86A61B9F5D42007C9389 /* FilterView.m */,
 				92FF86A11B9F5B7B007C9389 /* MyPluginViewController.xib */,
 				92FF86841B9F4EDA007C9389 /* Info.plist */,
 				164896A31C9259D400AB781D /* MyPluginViewController+AUAudioUnitFactory.h */,
@@ -221,12 +212,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				92FF86A21B9F5B7B007C9389 /* MyPluginViewController.h in Headers */,
-				164896A51C925D1600AB781D /* MyPluginViewController_Internal.h in Headers */,
 				4F78BE7522E7DE8000AD537E /* MyPlugin.h in Headers */,
 				4F78BE7122E7DE8000AD537E /* BufferedAudioBus.hpp in Headers */,
 				4F78BE7222E7DE8000AD537E /* DSPKernel.hpp in Headers */,
 				92FF86831B9F4EDA007C9389 /* MyPluginFramework.h in Headers */,
-				92FF86A71B9F5D42007C9389 /* FilterView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +402,6 @@
 			files = (
 				4F78BE7322E7DE8000AD537E /* DSPKernel.mm in Sources */,
 				4F4D205222E7300500B7C588 /* MyPluginViewController+AUAudioUnitFactory.m in Sources */,
-				92FF86A81B9F5D42007C9389 /* FilterView.m in Sources */,
 				92FF86A31B9F5B7B007C9389 /* MyPluginViewController.m in Sources */,
 				4F78BE7422E7DE8000AD537E /* MyPlugin.mm in Sources */,
 			);
@@ -549,7 +537,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.OliLarkin.MyPluginApp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OliLarkin.MyPluginApp;
 				PRODUCT_NAME = MyPlugin;
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "../Shared/MyPluginApp-Bridging-Header.h";
@@ -596,7 +584,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.OliLarkin.MyPluginApp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OliLarkin.MyPluginApp;
 				PRODUCT_NAME = MyPlugin;
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "../Shared/MyPluginApp-Bridging-Header.h";
@@ -648,7 +636,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.OliLarkin.MyPluginApp.MyPluginAppExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OliLarkin.MyPluginApp.MyPluginAppExtension;
 				PRODUCT_NAME = MyPluginAppExtension;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -691,7 +679,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/MyPluginAppExtension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.OliLarkin.MyPluginApp.MyPluginAppExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OliLarkin.MyPluginApp.MyPluginAppExtension;
 				PRODUCT_NAME = MyPluginAppExtension;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -749,7 +737,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.OliLarkin.MyPluginFramework";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OliLarkin.MyPluginFramework;
 				PRODUCT_NAME = MyPluginFramework;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -803,7 +791,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.OliLarkin.MyPluginFramework";
+				PRODUCT_BUNDLE_IDENTIFIER = com.OliLarkin.MyPluginFramework;
 				PRODUCT_NAME = MyPluginFramework;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;

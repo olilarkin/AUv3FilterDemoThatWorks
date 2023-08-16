@@ -1,11 +1,3 @@
-/*
-	Copyright (C) 2016 Apple Inc. All Rights Reserved.
-	See LICENSE.txt for this sample’s licensing information
-	
-	Abstract:
-	Header for the embedded MyPluginFramework.
-*/
-
 #import <Cocoa/Cocoa.h>
 
 //! Project version number for MyPluginFramework.

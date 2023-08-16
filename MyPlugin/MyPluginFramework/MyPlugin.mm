@@ -1,11 +1,3 @@
-/*
-	Copyright (C) 2016 Apple Inc. All Rights Reserved.
-	See LICENSE.txt for this sample’s licensing information
-	
-	Abstract:
-	An AUAudioUnit subclass implementing a low-pass filter with resonance. Illustrates parameter management and rendering, including in-place processing and buffer management.
-*/
-
 #import "MyPlugin.h"
 #import <AVFoundation/AVFoundation.h>
 #import "FilterDSPKernel.hpp"
@@ -314,27 +306,6 @@ static AUAudioUnitPreset* NewAUPreset(NSInteger number, NSString *name)
 // Partially bridged to the v2 property kAudioUnitProperty_InPlaceProcessing, the v3 property is not settable.
 - (BOOL)canProcessInPlace {
     return YES;
-}
-
-#pragma mark -
-
-- (NSArray<NSNumber *> *)magnitudesForFrequencies:(NSArray<NSNumber *> *)frequencies {
-	FilterDSPKernel::BiquadCoefficients coefficients;
-
-    double inverseNyquist = 2.0 / self.outputBus.format.sampleRate;
-	
-    coefficients.calculateLopassParams(_kernel.cutoffRamper.getUIValue(), _kernel.resonanceRamper.getUIValue());
-	
-    NSMutableArray<NSNumber *> *magnitudes = [NSMutableArray arrayWithCapacity:frequencies.count];
-	
-    for (NSNumber *number in frequencies) {
-		double frequency = [number doubleValue];
-		double magnitude = coefficients.magnitudeForFrequency(frequency * inverseNyquist);
-
-        [magnitudes addObject:@(magnitude)];
-	}
-	
-    return [NSArray arrayWithArray:magnitudes];
 }
 
 @end
